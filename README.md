@@ -60,7 +60,7 @@ This trains the model and puts the checkpoints inside a `model` folder and logs 
 To chat with the chatbot, run the following command (in google colab):
 
 ```
-! python3 chatbot_test.py  ---attn_model [NAME_OF_ATTENTION_MODEL] --device ['cpu' or 'cuda'] --hidden_size [SIZE] --checkpoint [MODEL_CHECKPOINT_TO_BE_LOADED] --min_count [MIN_COUNT_FOR_WORDS] --max_length [MAX_LENGTH_OF_SENTENCE] --encoder_n_layers [NUMBER] --decoder_n_layers [NUMBER]
+! python3 chatbot_test.py  --attn_model [NAME_OF_ATTENTION_MODEL] --device ['cpu' or 'cuda'] --hidden_size [SIZE] --checkpoint [MODEL_CHECKPOINT_TO_BE_LOADED] --min_count [MIN_COUNT_FOR_WORDS] --max_length [MAX_LENGTH_OF_SENTENCE] --encoder_n_layers [NUMBER] --decoder_n_layers [NUMBER]
 
 ```
 - `attn_model`              - type of attention model: (dot/general/concat)
